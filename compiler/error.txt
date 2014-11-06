@@ -1,0 +1,2 @@
+prg1.c: In function 'main':
+prg1.c:8:1: error: expected ';' before '}' token

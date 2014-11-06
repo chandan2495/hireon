@@ -1,0 +1,37 @@
+<!doctype html>
+
+<title>CodeMirror: C-like mode</title>
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" href="../../lib/codemirror.css">
+<link rel="stylesheet" href="../../theme/vibrant-ink.css">
+<script src="../../lib/codemirror.js"></script>
+<script src="clike.js"></script>
+
+<style>.CodeMirror {border: 2px  inset #dee;
+    width:70%;
+  }
+  </style>
+
+
+<div><textarea id="c-code">
+
+
+
+</textarea></div>
+
+<input type="button" value="getvalue" onclick="get()"/>
+
+    <script>
+      var cEditor = CodeMirror.fromTextArea(document.getElementById("c-code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: "text/x-csrc",
+
+      });
+      cEditor.setValue("/*Write your program here*/\n#include<stdio.h> \nint main()\n{\n\n\nreturn 0;\n}");
+      function get(){
+        alert(cEditor.getValue());
+      }
+      
+    </script>
