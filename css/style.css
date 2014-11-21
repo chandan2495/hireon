@@ -170,3 +170,7 @@ pre{
 	margin-top: 10px;
 	float: right;
 }
+
+.modal-content{
+	border-radius: 0px;
+}
